@@ -1,0 +1,26 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Servicio para pruebas",
+  "main": "server.js",
+  "scripts": {
+    "test": "hello",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alltic/nodeProject.git"
+  },
+  "keywords": [
+    "Alltic-Node"
+  ],
+  "author": "Jeison Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alltic/nodeProject/issues"
+  },
+  "homepage": "https://github.com/alltic/nodeProject#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
