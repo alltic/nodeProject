@@ -33,6 +33,5 @@
   "scripts": {
     "start": "SET NODE_ENV=dev && node bin/www",
     "test": "mocha --recursive -R xunit test/ > test-reports.xml",
-    "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter"
   }
 }
