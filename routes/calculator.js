@@ -26,4 +26,6 @@ router.get('/div/:n1/:n2', function(req, res) {
 	res.send(JSON.stringify({'result':div}));
 });
 
+console.log("System");
+
 module.exports = router;
