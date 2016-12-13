@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "SET NODE_ENV=dev && node bin/www",
+    "test": "mocha "
   },
   "repository": {
     "type": "git",
@@ -22,16 +23,16 @@
     "express": "~4.14.0",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0",
-    "mocha-jenkins-reporter": "0.3.1"
+    "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "mocha-junit-reporter": "^1.12.1"
   },
   "scripts": {
     "start": "SET NODE_ENV=dev && node bin/www",
-    "test": "mocha --recursive -R xunit test/ > test-reports.xml",
+    "test": "mocha test/ --reporter mocha-junit-reporter"
   }
 }
