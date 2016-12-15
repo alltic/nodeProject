@@ -22,7 +22,7 @@ describe('Calculator', () => {
               res.should.be.json;
               res.body.should.be.a('object');
               res.body.should.have.property('result');
-              res.body.result.should.equal(5);
+              res.body.result.should.equal(2);
               done();
 
             });
